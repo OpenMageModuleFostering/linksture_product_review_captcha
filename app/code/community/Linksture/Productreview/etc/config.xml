@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Linksture_Productreview>
+            <version>1.1.0.0.0</version>
+        </Linksture_Productreview>
+    </modules>
+    <global>
+         <models>
+            <productreview>
+                <class>Linksture_Productreview_Model</class>
+                
+            </productreview>
+            
+        </models>
+         
+        <events>
+            <controller_action_predispatch_review_product_post>
+                <observers>
+                    <productreview>
+                        <class>productreview/observer</class>
+                        <method>checkProductReview</method>
+                    </productreview>
+                </observers>
+            </controller_action_predispatch_review_product_post>
+            </events>
+            
+        <blocks>
+            <captcha>
+                <rewrite>
+                    <captcha_zend>Linksture_Productreview_Block_Captcha_Zend</captcha_zend>
+                </rewrite>
+            </captcha>
+        </blocks>
+        <helpers>
+        <productreview><!-- class group -->
+            <class>Linksture_Productreview_Helper</class><!-- class prefix -->
+        </productreview>
+    </helpers>
+    
+               
+    </global>
+    
+    <frontend>
+        <routers>
+            <productreview>
+                <use>standard</use>
+                <args>
+                    <module>Linksture_Productreview</module>
+                    <frontName>productreview</frontName>
+                </args>
+            </productreview>
+        </routers>
+        
+        
+        
+        <layout>
+            <updates>
+                <productreview>
+                    <file>reviewcaptcha.xml</file>
+                </productreview>
+            </updates>
+        </layout>
+        
+    </frontend>
+   
+<adminhtml>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <reviewcaptcha_section translate="title" module="productreview">
+                               
+                                    </reviewcaptcha_section>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                 </children>
+            </admin>
+        </resources>
+    </acl>
+
+    </adminhtml>
+</config>

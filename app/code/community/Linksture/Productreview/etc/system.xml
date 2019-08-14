@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+		<reviewcaptcha_tab translate="label">
+		    <label>Linksture Review Captcha</label>
+		    <sort_order>150</sort_order>
+		</reviewcaptcha_tab>
+	</tabs>
+	<sections>
+		<reviewcaptcha_section translate="label">		    
+		    <label>Review Captcha</label>
+		    <tab>reviewcaptcha_tab</tab>
+		    <sort_order>130</sort_order>
+		    <show_in_default>1</show_in_default>
+		    <show_in_website>1</show_in_website>
+		    <show_in_store>1</show_in_store>
+		    <groups>
+			<reviewcaptcha_group>
+			    <label>General</label>
+			    <frontend_type>text</frontend_type>
+			    <sort_order>20</sort_order>
+			    <show_in_default>1</show_in_default>
+			    <show_in_website>1</show_in_website>
+			    <show_in_store>1</show_in_store>
+			    <fields>
+				<reviewcaptcha_field translate="label">
+                                    
+				    <label>Enable/Disable</label>
+				    <frontend_type>select</frontend_type>
+				    <sort_order>40</sort_order>
+				    <source_model>adminhtml/system_config_source_enabledisable</source_model>
+				    <show_in_default>1</show_in_default>
+				    <show_in_website>1</show_in_website>
+				    <show_in_store>1</show_in_store>
+                                    
+				</reviewcaptcha_field>		
+			    </fields>
+			</reviewcaptcha_group>
+		    </groups>
+		</reviewcaptcha_section>
+	</sections>
+</config>

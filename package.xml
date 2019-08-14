@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>linksture_product_review_captcha</name>
+    <version>1.0.0.3</version>
+    <stability>stable</stability>
+    <license>OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Add magento native image captcha to product review form.</summary>
+    <description>Add magento native image captcha to product review form.</description>
+    <notes>Releasing version 1.0.0.2, Add magento native image captcha to product review form.</notes>
+    <authors><author><name>Haresh</name><user>linksture</user><email>haresh@linksture.com</email></author></authors>
+    <date>2015-01-07</date>
+    <time>11:23:05</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Linksture_Productreview.xml" hash="e5303dce4d35a1f1cd834e57b81aae85"/></dir></target><target name="magecommunity"><dir name="Linksture"><dir name="Productreview"><dir name="Block"><dir name="Captcha"><file name="Zend.php" hash="54ea8ff3635cfe2ca10eb8b319fd5859"/></dir></dir><dir name="Helper"><file name="Data.php" hash="71ef779f05af5db7c20562daa8cc0b3d"/></dir><dir name="Model"><file name="Observer.php" hash="0d903c7e916dcf12235b5af3fadc11a1"/><file name="Observer.php~" hash="0d903c7e916dcf12235b5af3fadc11a1"/></dir><dir name="etc"><file name="config.xml" hash="f8ed9cf1113008b7a48963e748a7629d"/><file name="system.xml" hash="2ba9c16199e5a759da558386607a7376"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="reviewcaptcha.xml" hash="851a314c535509608604e27a957c934b"/></dir><dir name="template"><dir name="review"><file name="form.phtml" hash="c51e0c2e27d346e2022a0c5d82694b5b"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="default"><dir name="default"><dir name="js"><file name="captcha.js" hash="6b65c3644bd2d971b08870b51d3555f8"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout version="0.1.0"> 
+<review_product_list translate="label">
+<reference name="head">
+    
+<action method="addItem" 	ifconfig="reviewcaptcha_section/reviewcaptcha_group/reviewcaptcha_field">
+	<type>skin_js</type>
+	<name>js/captcha.js</name>
+ <params/>
+</action>
+</reference>
+ </review_product_list>
+
+</layout>
