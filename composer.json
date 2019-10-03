@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/linksture_product_review_captcha",
+    "name": "OpenMageModuleFostering\/linksture_product_review_captcha",
     "type": "magento-module",
     "license": "OSL",
     "homepage": "",
     "description": "Add magento native image captcha to product review form.",
     "authors": [
-    {
-        "name": "Haresh",
-        "email": "haresh@linksture.com"
-    }
-],
+        {
+            "name": "Haresh",
+            "email": "haresh@linksture.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
